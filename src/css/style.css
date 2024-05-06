@@ -1,0 +1,167 @@
+:root {
+  --Poppins: "Poppins", sans-serif;
+  --White: #fff;
+  --Lightblue: #0188cc;
+  --Lightgreen: #2ba968;
+  --Lightred: #da5555;
+  --Darkgray: #222529;
+  --Textcolor: #a8a8a8;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+header {
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 6.25rem;
+    height: 2.5rem;
+    background-color: #0188cc;
+
+    .th-left {
+      .dropdown {
+        cursor: pointer;
+        display: flex;
+        gap: 1.25rem;
+
+        .first-dropdown {
+          .fa-2xs {
+            color: var(--Textcolor);
+          }
+          span {
+            font-family: var(--Poppins);
+            color: rgb(231, 198, 198);
+            font-size: 0.75rem;
+            font-weight: 700;
+          }
+        }
+        .second-dropdown {
+          span {
+            font-family: var(--Poppins);
+            color: rgb(231, 198, 198);
+            font-size: 0.75rem;
+            font-weight: 700;
+          }
+          i {
+            color: var(--Textcolor);
+          }
+        }
+      }
+    }
+    .th-right {
+      nav {
+        ul {
+          p {
+            font-family: var(--Poppins);
+            color: rgb(231, 198, 198);
+            font-size: 0.8125rem;
+            font-weight: 700;
+          }
+          display: flex;
+          align-items: center;
+          gap: 1.875rem;
+          li {
+            a {
+              font-family: var(--Poppins);
+              color: rgb(231, 198, 198);
+              font-size: 0.8125rem;
+              font-weight: 700;
+            }
+            
+          }
+        }
+      }
+      i{
+              cursor: pointer;
+            }
+    }
+  }
+  .bottom-header {
+    height: 6.1875rem;
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+  }
+
+  .bt-form {
+    padding-left: 6.25rem;
+    form {
+      display: flex;
+      gap: 100px;
+      input {
+        background-color: #ece8e8;
+        outline: none;
+        width: 500px;
+        height: 2.5rem;
+        border-radius: 1.25rem;
+        border: none;
+        padding: 0.625rem;
+      }
+    }
+  }
+
+  .bt-info {
+    display: flex;
+    align-items: center;
+    gap: 3.125rem;
+    padding-right: 6.25rem;
+    .phone-info {
+      display: flex;
+      gap: 0.625rem;
+      align-items: center;
+      .ph-info-number {
+        h6 {
+          color: var(--Textcolor);
+          font-family: var(--Poppins);
+          a {
+            color: black;
+            font-size: 1.125rem;
+            font-family: var(--Poppins);
+          }
+        }
+      }
+    }
+  }
+
+  .bt-info-icon {
+    display: flex;
+    gap: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    .bag-shopping {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "3";
+        width: 1.0625rem;
+        height: 1.0625rem;
+        text-align: center;
+        border-radius: 50%;
+        background-color: var(--Lightred);
+        color: var(--White);
+        font-size: .6875rem;
+        font-family: var(--Poppins);
+        right: -0.625rem;
+        bottom: .5rem;
+      }
+    }
+  }
+}
+
+main {
+}
